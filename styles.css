@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins';
+  font-size: 16px;
+  background: url(images/bg-intro-desktop.png) hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-container {
+  width: 80%;
+  height: 70%;
+  display: flex;
+}
+.heading {
+  flex-basis: 50%;
+  align-self: center;
+  color: white;
+  margin-top: 160px;
+}
+.heading h2 {
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+  line-height: 1;
+  margin-top: 50px;
+}
+.heading-para {
+  font-weight: 500;
+
+  line-height: 1.5;
+  margin-right: 0em;
+}
+.form-section {
+  flex-basis: 50%;
+}
+.trail-btn {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background: hsl(248, 32%, 49%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 2px 7px 0px hsl(249, 10%, 26%);
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+span {
+  font-weight: 400;
+  color: hsl(246, 25%, 77%);
+}
+#form {
+  width: 100%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 7px 0px hsl(249, 10%, 26%);
+}
+.input-field {
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+#firstname {
+  margin-top: 60px;
+}
+.input-field input {
+  width: 90%;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  border-color: hsl(246, 25%, 77%);
+}
+input:focus {
+  outline: 0;
+}
+input::placeholder {
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+  font-size: 16px;
+}
+input[type] {
+  font-weight: 600;
+  color: hsl(249, 10%, 26%);
+  font-size: 18px;
+}
+.input-field.error input {
+  color: hsl(0, 100%, 74%);
+  margin-top: 0;
+  border-color: hsl(0, 100%, 74%);
+  border: 3px solid hsl(0, 100%, 74%);
+  background: url(images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 10px right 10px;
+}
+.input-field.error input::placeholder {
+  opacity: 0;
+}
+.error {
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  font-style: italic;
+  text-align: right;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  margin-right: 70px;
+}
+
+.claim-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  width: 90%;
+  margin-left: 30px;
+  padding: 20px;
+  border: none;
+  background: hsl(154, 59%, 51%);
+  font-weight: 500;
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+.claim-btn:hover {
+  cursor: pointer;
+  background: hsl(154, 59%, 51%, 0.8);
+}
+.terms-para {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: hsl(246, 25%, 77%);
+  margin-bottom: 10px;
+}
+.terms-para p {
+  margin-bottom: 10px;
+  font-size: small;
+  font-weight: 500;
+}
+a {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  body {
+    height: 1000px;
+    background: url(images/bg-intro-mobile.png) hsl(0, 100%, 74%);
+  }
+  .main-container {
+    flex-direction: column;
+  }
+  .heading {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .heading-para {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  a {
+    display: block;
+  }
+}
